@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header') -%>
+<body>
+
+<!-- Start your project here-->
+<!-- Sidenav -->
+<%- include('partials/sideNavBar') -%>
+<!-- Sidenav -->
+
+<div class="fixed-top m-3">
+    <button
+            id="toggler"
+            class="btn btn-black"
+            data-mdb-toggle="sidenav"
+            data-mdb-target="#full-screen-example"
+    >
+        <i class="fas fa-bars"></i>
+    </button>
+</div>
+
+<div class="container my-5 py-5">
+    <%- include('parts/accountUSerDB') -%>
+</div>
+
+<%- include('partials/footer') -%>
+</body>
+<%- include('partials/scripts') -%>
+</html>

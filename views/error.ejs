@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<%- include('partials/header') -%>
+<body>
+<!-- navbar -->
+<%- include('partials/sideNavBar') -%>
+<!-- navbar -->
+<style>
+    .notFound {
+        background: url('/img/404notfound.png')
+        no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 80vh;
+    }
+</style>
+
+<div class="fixed-top m-3">
+    <button
+            id="toggler"
+            class="btn btn-black"
+            data-mdb-toggle="sidenav"
+            data-mdb-target="#full-screen-example"
+    >
+        <i class="fas fa-bars"></i>
+    </button>
+</div>
+
+<div class="notFound"></div>
+
+<%- include('partials/footer') -%>
+
+</body>
+<%- include('partials/scripts') -%>
+</html>

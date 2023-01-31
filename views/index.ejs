@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header') -%>
+  <body>
+  <style>
+    .homeIntro {
+      background: url('/img/homeIntro-1.jpg')
+      no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 210px;
+      padding-bottom: 210px;
+    }
+  </style>
+    <!-- Start your project here-->
+    <!-- Sidenav -->
+    <%- include('partials/sideNavBar') -%>
+    <!-- Sidenav -->
+
+    <div class="homeIntro">
+
+      <div class="container">
+        <div class="fixed-top m-3">
+          <button
+                  id="toggler"
+                  class="btn btn-black"
+                  data-mdb-toggle="sidenav"
+                  data-mdb-target="#full-screen-example"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text-center text-black">
+            <h1 class="display-4 p-2">Express.js App</h1>
+            <h2 class="mb-3 p-2">
+              Web Developer & Designer, Coding Instructor
+            </h2>
+            <% if(loggedIn){ %>
+              <a class="btn btn-white btn-lg" href="/logout/user">Logout of Account</a>
+              <a href="/create" class="btn btn-lg btn-info">Create New Post</a>
+            <% } else { %>
+              <a class="btn btn-black btn-lg" href="/account">Login / Register</a>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- features -->
+    <div class="container my-5 py-5">
+      <!-- Section: Design Block -->
+      <section>
+        <div class="row text-center gx-xl-5">
+          <div class="col-md-6 col-xl-3 mb-5 mb-xl-0">
+            <div class="mx-auto rounded-circle d-flex justify-content-center align-items-center shadow-3-soft mb-4"
+                 style="width: 50px; height: 50px; background: #fceabb; background: -webkit-linear-gradient(to bottom, #fff, #fceabb); background: linear-gradient(to bottom, #fff, #fceabb);">
+              <i class="fab fa-figma" style="font-size: 1.5rem;"></i>
+            </div>
+            <h6 class="text-uppercase fw-bold mb-3 pt-2 pb-1">Full project in Figma</h6>
+            <p>Odit quae dolore soluta magnam eligendi molestiae velit, minima eius facere corrupti magnam, eligendi illo
+              dolor esse error dolore odit.</p>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-5 mb-xl-0">
+            <div class="mx-auto rounded-circle d-flex justify-content-center align-items-center shadow-3-soft mb-4"
+                 style="width: 50px; height: 50px; background: #fceabb; background: -webkit-linear-gradient(to bottom, #fff, #fceabb); background: linear-gradient(to bottom, #fff, #fceabb);">
+              <i class="fas fa-icons" style="font-size: 1.5rem;"></i>
+            </div>
+            <h6 class="text-uppercase fw-bold mb-3 pt-2 pb-1">Visual identification</h6>
+            <p>Quis autem vel eum iure reprehenderit inease voluptate velit esse quam nihil molestiae consequatur, vel
+              illum qui pariatur laudantium veniam.</p>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-5 mb-md-0">
+            <div class="mx-auto rounded-circle d-flex justify-content-center align-items-center shadow-3-soft mb-4"
+                 style="width: 50px; height: 50px; background: #fceabb; background: -webkit-linear-gradient(to bottom, #fff, #fceabb); background: linear-gradient(to bottom, #fff, #fceabb);">
+              <i class="fas fa-yin-yang" style="font-size: 1.5rem;"></i>
+            </div>
+            <h6 class="text-uppercase fw-bold mb-3 pt-2 pb-1">Create key visuals</h6>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores nesciunt porro quisquam est.</p>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="mx-auto rounded-circle d-flex justify-content-center align-items-center shadow-3-soft mb-4"
+                 style="width: 50px; height: 50px; background: #fceabb; background: -webkit-linear-gradient(to bottom, #fff, #fceabb); background: linear-gradient(to bottom, #fff, #fceabb);">
+              <i class="fas fa-paint-brush" style="font-size: 1.5rem;"></i>
+            </div>
+            <h6 class="text-uppercase fw-bold mb-3 pt-2 pb-1">Art direction</h6>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              veritatis et quasi architecto.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+
+    </div>
+    <!-- features -->
+
+    <!-- Container for demo purpose only -->
+    <div class="container pt-3">
+
+      <!-- Section: Design Block -->
+      <section class="mb-8">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <p class="text-muted mb-4">ProBox</p>
+            <p class="h3 mb-4">Redesigning visual communication for the best shopping experience</p>
+            <p class="mb-4 mb-md-5 mb-lg-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium, totam rem aperiam, eaque ipsa quae illo inventore veritatis et quasi architecto beatae vitae dicta explicabo.</p>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="https://mdbootstrap.com/img/Photos/Others/img3.jpg" class="w-100 rounded-5 mb-4 shadow-3-soft" alt="Sample image"
+                     data-mdb-toggle="animation"
+                     data-mdb-animation="fade-in"
+                     data-mdb-animation-start="onScroll"
+                     data-mdb-animation-show-on-load="false"
+                     data-mdb-animation-duration="2000"
+                     data-mdb-animation-delay="100">
+                <div class="row">
+                  <div class="col-md-9 offset-md-3">
+                    <img src=" https://mdbootstrap.com/img/Photos/Others/img4.jpg" class="w-100 rounded-5 mb-4 mb-md-0 shadow-3-soft" alt="Sample image"
+                         data-mdb-toggle="animation"
+                         data-mdb-animation="fade-in"
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-duration="2000"
+                         data-mdb-animation-delay="500">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="https://mdbootstrap.com/img/Photos/Others/img8.jpg" class="w-100 rounded-5 mt-md-5 shadow-3-soft" alt="Sample image"
+                     data-mdb-toggle="animation"
+                     data-mdb-animation="fade-in"
+                     data-mdb-animation-start="onScroll"
+                     data-mdb-animation-show-on-load="false"
+                     data-mdb-animation-duration="2000"
+                     data-mdb-animation-delay="300">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+
+    </div>
+    <!-- Container for demo purpose only -->
+
+    <!-- categories -->
+    <div class="container my-5">
+
+      <!--Section: Design Block-->
+      <section class="mb-10">
+        <p class="fs-1 fw-bold text-center mb-5">Read by the category</p>
+        <div class="row gx-xl-5">
+          <div class="col-md-6 col-xl-3 mb-4">
+            <div class="bg-image ripple rounded-5" data-mdb-ripple-color="light">
+              <img class="w-100" src="https://mdbootstrap.com/img/new/blog/7.jpeg"
+                   style="height: 200px; object-fit: cover" />
+              <a href="/technology">
+                <div class="mask" style="background-color: rgba(255,255,255, 0.5)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <p class="h4 fw-bold text-uppercase text-dark mb-0">technology</p>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(255,255,255, 0.1)"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-4">
+            <div class="bg-image ripple rounded-5" data-mdb-ripple-color="light">
+              <img class="w-100" src="https://mdbootstrap.com/img/new/blog/8.jpeg"
+                   style="height: 200px; object-fit: cover" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(255,255,255, 0.5)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <p class="h4 fw-bold text-uppercase text-dark mb-0">the news</p>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(255,255,255, 0.1)"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-4">
+            <div class="bg-image ripple rounded-5" data-mdb-ripple-color="light">
+              <img class="w-100" src="https://mdbootstrap.com/img/new/blog/9.jpeg"
+                   style="height: 200px; object-fit: cover" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(255,255,255, 0.5)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <p class="h4 fw-bold text-uppercase text-dark mb-0">opportunity</p>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(255,255,255, 0.1)"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-4">
+            <div class="bg-image ripple rounded-5" data-mdb-ripple-color="light">
+              <img class="w-100" src="https://mdbootstrap.com/img/new/blog/17.jpg"
+                   style="height: 200px; object-fit: cover" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(255,255,255, 0.5)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <p class="h4 fw-bold text-uppercase text-dark mb-0">photography</p>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(255,255,255, 0.1)"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+    </div>
+    <!-- categories -->
+
+    <!-- Container for demo purpose -->
+    <div class="container my-5">
+
+      <!--Section: Design Block-->
+      <section>
+        <div class="row">
+          <% for(i=0; i < blogs.length; i++){ %>
+          <div class="col-lg-6">
+            <p class="small text-muted"> <%= blogs[i].datePosted.toLocaleString() %> </p>
+            <h2 class="fw-bold mb-3">
+              <a href="/post/<%= blogs[i]._id %>" class="text-reset"> <%= blogs[i].title %> </a>
+            </h2>
+            <p class="text-muted">
+              <%= blogs[i].body.substring(0, 110) %> . . .
+            </p>
+            <p class="small text-muted">
+              By <a href="#!" class="text-reset text-dark"><%= blogs[i].userid.username %></a>
+            </p>
+            <% if(loggedIn){ %>
+              <a class="btn btn-warning" href="/delete/post/<%= blogs[i]._id %>">Delete Post</a>
+            <% } %>
+          </div>
+          <div class="col-lg-6">
+            <figure class="figure d-block mb-0">
+              <div class="bg-image hover-overlay hover-zoom rounded-6 mb-2">
+                <img
+                        class="w-100 rounded-6"
+                        src="<%= blogs[i].image %>"
+                        style="object-fit: cover; height: 250px"
+                        alt="<%= blogs[i].title %>"
+                />
+                <a href="/post/<%= blogs[i]._id %>">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <figcaption class="figure-caption">
+                <%= blogs[i].title %>
+              </figcaption>
+            </figure>
+          </div>
+            <hr class="divider-horizontal" style="margin-top: 15px; margin-bottom: 3.5rem;">
+          <% } %>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+
+    </div>
+    <%- include('partials/footer') -%>
+  </body>
+  <%- include('partials/scripts') -%>
+</html>
